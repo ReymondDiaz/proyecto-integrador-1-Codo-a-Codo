@@ -1,0 +1,52 @@
+
+.navbar-brand img{
+    width: 90px;
+}
+.navbar>.container-fluid{
+    flex-wrap: nowrap;
+}
+.container-fluid{
+    margin: 0 3rem;
+ }
+.honolulu img{
+    max-width: 100%;
+ }
+ 
+.btn-comprar{
+    background-color: #29a744;
+    margin-left: 20px;
+    border: none;
+ }
+.btn-comprar:hover{
+    scale: 1.2;
+    background-color: #29a744;
+ }
+.btn-orador:hover{
+    scale: 1.2;
+ }
+ .btn-enviar{
+   background-color: #96c93e;
+ }
+ .btn-enviar:hover{
+   background-color: #96c93e;
+ }
+ .formulario .enlace{
+   text-decoration: none;
+   color: black;
+   border-bottom: 1px black dashed;
+ }
+ .footer{
+   background-color: #1e516e;
+   height: 90px;
+   
+ }
+ 
+ @media (max-width: 992px) { 
+   .footer{height: 200px;   
+    }
+   
+    .footer-lista{
+      flex-direction: column;
+
+    } 
+ }
