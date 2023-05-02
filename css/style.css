@@ -79,9 +79,10 @@
   background-color:#212529;
   position: absolute;
   z-index: 1;
-  top: 8vh;
+  top: 2vh;
   left: 0px;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  padding-top:  3rem;
   
   
 } 
