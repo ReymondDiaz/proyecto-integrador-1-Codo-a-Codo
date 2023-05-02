@@ -1,53 +1,53 @@
+*{
+  font-size: 18px;
+}
 .navbar{
   width: 100%;
-    position: fixed;
-    z-index: 3;
+  position: fixed;
+  z-index: 3;
 }
 .navbar-brand img{
-    width: 90px;
+  width: 90px;
 }
 
 
 .container-fluid{
-    margin-right:3rem;
- }
+  margin-right:3rem;
+}
 .honolulu img{
-    max-width: 100%;
- }
- 
+  max-width: 100%;
+}
 .btn-comprar{
     background-color: #29a744;
     margin-left: 20px;
     border: none;
- }
+}
 .btn-comprar:hover{
-    scale: 1.2;
-    background-color: #29a744;
- }
+  scale: 1.2;
+  background-color: #29a744;
+}
 .btn-orador:hover{
-    scale: 1.2;
- }
- .btn-enviar{
-   background-color: #96c93e;
- }
- .btn-enviar:hover{
-   background-color: #96c93e;
- }
- .formulario .enlace{
-   text-decoration: none;
-   color: black;
-   border-bottom: 1px black dashed;
- }
- .footer{
-   background-color: #1e516e;
-   height: 90px;
-   
- }
+  scale: 1.2;
+}
+.btn-enviar{
+  background-color: #96c93e;
+}
+.btn-enviar:hover{
+  background-color: #96c93e;
+}
+.formulario .enlace{
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px black dashed;
+}
+.footer{
+  background-color: #1e516e;
+  height: 90px;
+  }
 
- 
- @media (max-width: 992px) {
+@media (max-width: 992px) {
+
 .container-fluid{
-  padding-top: 2rem;
   margin-right: 2rem ;
   text-align: center;
   
@@ -56,11 +56,13 @@
   visibility: hidden;
 }
 .carousel{
-  padding-top: 9.5vh;
+  padding-top: 4.5rem;
+  
 }
 .carousel-item img{
-  height: 40vh;
-  object-fit: cover;
+  height: 50vh;
+  object-fit:cover;
+  
 } 
 .parrafoUno{
   width: 100%;
@@ -71,14 +73,17 @@
 .footer-lista{
   flex-direction: column;
 } 
+
 .collapse{
   width: 100%;
   background-color:#212529;
   position: absolute;
   z-index: 1;
-  top: 9vh;
+  top: 8vh;
   left: 0px;
-  padding: 1rem 0 0.5rem 1rem;
+  margin-top: 2rem;
+  
+  
 } 
 .parrafoDos{
   display: flex;
@@ -91,5 +96,9 @@
 .inputs{
   width: 100%;
   flex-direction: column;
+}
+.formulario{
+  margin: 0 auto;
+  width: 100%;
 }
 }
