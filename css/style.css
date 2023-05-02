@@ -35,6 +35,9 @@
 .btn-enviar:hover{
   background-color: #96c93e;
 }
+.card{
+  width: 25rem;
+}
 .formulario .enlace{
   text-decoration: none;
   color: black;
