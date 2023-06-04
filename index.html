@@ -19,11 +19,11 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav ">
-              <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
-              <a class="nav-link" href="#">Los oradores</a>
+              <a class="nav-link active"  href="#">La conferencia</a>
+              <a class="nav-link" href="#oradores">Los oradores</a>
               <a class="nav-link" href="#">El lugar y la fecha</a>
-              <a class="nav-link" href="#">Coviertete en orador</a>
-              <a class="nav-link text-success" href="#">Comprar tickets</a>
+              <a class="nav-link" href="#formulario">Coviertete en orador</a>
+              <a class="nav-link text-success" href="compra.html">Comprar tickets</a>
             </div>
           </div>
         </div>
@@ -38,8 +38,8 @@
                 <div class=" parrafoUno">
                   <h1 class="display-5 fw-bold ">Conf Bs As</h1>
                   <p class=" fs-4 ">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. te esperamos!</p>
-                  <button class=" btn-orador btn btn-lg border text-white">Quiero ser orador</button>
-                  <button class="btn-comprar btn btn-lg text-white" > Comprar tickets</button>
+                  <a href="#formulario"><button class=" btn-orador btn btn-lg border text-white">Quiero ser orador</button></a>
+                  <a href="compra.html"> <button class="btn-comprar btn btn-lg text-white"  > Comprar tickets</button></a>
                 </div>
               </div>
             </div>
@@ -63,10 +63,10 @@
             </button>
         </div>
     </section>
-    <section class=" row d-flex align-items-center justify-content-center ">
+    <section class=" row d-flex align-items-center justify-content-center " id="oradores">
       <article class="col-12 text-center">
-        <p class="text-center fs-4">Conoce a los</p>
-        <p class="text-center h1">ORADORES</p>
+        <p class="text-center fs-5 mt-5">Conoce a los</p>
+        <p class="text-center h3">ORADORES</p>
       </article>
       <article class="col-12 col-md-6 col-xl-3 d-flex">
         <div class="card mx-auto mb-3 d-flex">
@@ -116,10 +116,10 @@
         <a href="#" class="btn btn-lg border text-white">Conocé más</a>
       </article>      
     </section>
-    <section class=" formulario container mb-5  d-flex justify-content-center col-10">
+    <section class=" formulario container   d-flex justify-content-center align-items-center col-10" id="formulario">
       <div class="col-12 col-lg-8">
         <article class=" text-center">
-          <p class="fs-5">CONVIÉRTETE EN UN</p>
+          <p class="fs-5 mt-5">CONVIÉRTETE EN UN</p>
           <h2>ORADOR</h2>
           <p class="fs-5">Anótate como orador para dar una <a href="mailto:info@studiobaddog.com." class="enlace">charla ignite.</a> Cuéntanos de qué quieres hablar!</p>
         </article>
