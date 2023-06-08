@@ -1,10 +1,19 @@
-window.addEventListener('load', function(){
+
     let valor = 200;
     let cantidad = document.getElementById('cantidad');
     let categoria = document.getElementById('categoria');
     let total = document.getElementById('total');
     let borrar =document.getElementById('borrar');
     let resumen = document.getElementById('resumen');
+    let navlink = document.querySelectorAll('.nav-link ');
+
+    navlink.forEach(function(item) {
+        item.addEventListener('click', function(e){
+            const currenItem = document.querySelector('.active');
+            currenItem.classList.remove('active');
+            e.target.classList.add('active');
+        });
+    });
     
     resumen.addEventListener('click', function(){
         function calculo(descuento){
@@ -12,7 +21,6 @@ window.addEventListener('load', function(){
             let costo = (valor-(valor*descuento))*cantidad.value;
             return costo;
         };
-        
 
 
         switch(categoria.value){
@@ -32,9 +40,6 @@ window.addEventListener('load', function(){
                 total.value = 'Seleccione una categoria';
             break;
         }
-    }); 
-
-
     borrar.addEventListener('click', function(){
     document.getElementById('correo').value = "",
     document.getElementById('cantidad').value = "",
@@ -45,5 +50,3 @@ window.addEventListener('load', function(){
     });
 
     });
-
- 

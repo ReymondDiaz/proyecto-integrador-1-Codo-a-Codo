@@ -3,6 +3,20 @@
   margin: 0;
   padding: 0;
 }
+li a {
+  border-radius: 30px;
+  
+}
+
+li a:hover{
+  background-color: #29a744;
+  border-radius: 30px;
+  transition: 1s;
+}
+ul li:nth-child(5) a:hover{
+  color: white !important;
+  
+}
 .navbar{
   width: 100%;
   position: fixed;
@@ -12,6 +26,7 @@
   width: 50px;
 }
 .carousel-caption{
+
   left: 0;
   right: 0;
   bottom: 0;
@@ -40,12 +55,10 @@ padding-top: 8rem;
     border: none;
 }
 .btn-comprar:hover{
-  scale: 1.2;
+  
   background-color: #29a744;
 }
-.btn-orador:hover{
-  scale: 1.2;
-}
+
 .btn-enviar{
   background-color: #96c93e;
 }
@@ -55,12 +68,7 @@ padding-top: 8rem;
 .card{
   width: 25rem;
 }
-.formulario{
-  height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-}
+
 .formulario .enlace{
   text-decoration: none;
   color: black;
@@ -69,6 +77,7 @@ align-items: center;
 .footer{
   background-color: #1e516e;
   height: 70px;
+  position: relative;
   }
 
   /*compra de tickets*/
@@ -82,7 +91,8 @@ padding-top: 12vh;
 
 @media (max-width: 992px) {
 .navbar{
-  padding-right: 0;
+  
+  padding-right: 0px;
 }
 
 .container-fluid{
@@ -115,7 +125,6 @@ padding-top: 12vh;
   right: 0;
 }
 .carousel{
-  padding-top: 4.5rem;
   z-index: 1;
 } 
 .carousel-item img{

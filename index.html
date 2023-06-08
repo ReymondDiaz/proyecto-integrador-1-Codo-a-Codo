@@ -19,11 +19,11 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav ">
-              <a class="nav-link active"  href="#">La conferencia</a>
-              <a class="nav-link" href="#oradores">Los oradores</a>
-              <a class="nav-link" href="#">El lugar y la fecha</a>
-              <a class="nav-link" href="#formulario">Coviertete en orador</a>
-              <a class="nav-link text-success" href="compra.html">Comprar tickets</a>
+              <li><a class="nav-link active"  href="#">La conferencia</a></li>
+              <li><a class="nav-link" href="#oradores">Los oradores</a></li>
+              <li><a class="nav-link" href="#">El lugar y la fecha</a></li> 
+              <li><a class="nav-link" href="#formulario">Coviertete en orador</a></li>
+              <li><a class="nav-link text-success" href="compra.html">Comprar tickets</a></li>
             </div>
           </div>
         </div>
@@ -31,7 +31,7 @@
     </header>
   <main>
       <section>
-        <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel w-100">
+        <div id="carouselExampleInterval" class="carousel slide w-100" data-bs-ride="carousel ">
           <div class="carousel-inner">
             <div class=" carousel-caption z-1 h-100 w-100 d-flex align-items-center parrafo">
               <div class="d-flex justify-content-end align-items: center; contenedor-conf ">
@@ -64,8 +64,8 @@
         </div>
     </section>
     <section class=" row d-flex align-items-center justify-content-center " id="oradores">
-      <article class="col-12 text-center">
-        <p class="text-center fs-5 mt-5">Conoce a los</p>
+      <article class="col-12 text-center mt-5">
+        <p class="text-center fs-5 pt-1">Conoce a los</p>
         <p class="text-center h3">ORADORES</p>
       </article>
       <article class="col-12 col-md-6 col-xl-3 d-flex">
@@ -109,18 +109,18 @@
       </article>
     </section>
     <section class="d-flex row ">
-      <img class="col-12 col-lg-6 honolulu pe-0 h-50" src="./images/honolulu.jpg" alt="honolulu"/>
+      <img class="col-12 col-lg-6 honolulu pe-0" src="./images/honolulu.jpg" alt="honolulu"/>
       <article class="parrafoDos col-12 col-lg-6 bg-dark  text-white"> 
         <h2>Bs As - Octubre</h2>
         <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km de superficie).</p>
         <a href="#" class="btn btn-lg border text-white">Conocé más</a>
       </article>      
     </section>
-    <section class=" formulario container   d-flex justify-content-center align-items-center col-10" id="formulario">
+    <section class=" formulario container h-100  d-flex justify-content-center align-items-center col-10" id="formulario">
       <div class="col-12 col-lg-8">
-        <article class=" text-center">
-          <p class="fs-5 mt-5">CONVIÉRTETE EN UN</p>
-          <h2>ORADOR</h2>
+        <article class=" text-center mt-5">
+          <p class="fs-5 pt-1">CONVIÉRTETE EN UN</p>
+          <p class="text-center h3">ORADOR</p>
           <p class="fs-5">Anótate como orador para dar una <a href="mailto:info@studiobaddog.com." class="enlace">charla ignite.</a> Cuéntanos de qué quieres hablar!</p>
         </article>
         <article class="d-flex  justify-content-center align-items-center row">
@@ -132,12 +132,10 @@
             <div class="mb-3">
               <textarea rows="5" class="form-control fs-4"  name="comentario" id="comentario" placeholder="Sobre qué quieres hablar?"></textarea>
               <label class="form-label" for="text">Recuerda incluir un título para tu charla</label>
-            </div>
-            <div class="mb-3 ">
               <input class="btn w-100 btn-enviar text-white"  type="submit">
               <input type="hidden" name="_next" value="https://http://127.0.0.1:5500/index.html/gracias.html">
               <input type="hidden" name="_subject" value="comentarios">
-            </div>
+            </div> </div>
           </form> 
         </article>
       </div>
@@ -157,5 +155,6 @@
     </div>
   </footer> 
 </body>
+<script src="./js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </html>
